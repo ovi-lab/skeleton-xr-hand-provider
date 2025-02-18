@@ -18,7 +18,7 @@ namespace ubco.ovilab.SkeletonXRHandProvider.Editor
 
         protected void OnEnable()
         {
-            if (FindObjectsOfType<SkeletonXRHands>().Length > 1)
+            if (FindObjectsByType<SkeletonXRHands>(FindObjectsSortMode.None).Length > 1)
             {
                 showWarn = true;
             }
